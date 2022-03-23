@@ -12,5 +12,7 @@
 		<key alias="seconds">sekunder</key>
 		<key alias="hour">time</key>
 		<key alias="hours">timer</key>
+		<key alias="urlPlaceholder">Angiv videoens URL her...</key>
+		<key alias="urlEmbedPlaceholder">Angiv videoens URL eller embed-kode her...</key>
 	</area>
 </language>
