@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<language alias="en" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
+	<area alias="limboVideo">
+		<key alias="videoId">ID</key>
+		<key alias="title">Titel</key>
+		<key alias="duration">Længde</key>
+		<key alias="and">og</key>
+		<key alias="minute">minut</key>
+		<key alias="minutes">minutter</key>
+		<key alias="second">sekund</key>
+		<key alias="seconds">sekunder</key>
+		<key alias="hour">time</key>
+		<key alias="hours">timer</key>
+	</area>
+</language>
