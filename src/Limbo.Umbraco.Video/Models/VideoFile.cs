@@ -13,40 +13,45 @@ namespace Limbo.Umbraco.Video.Models {
         /// <summary>
         /// Gets the width of the video file.
         /// </summary>
-        public int Width { get; }
+        public int Width { get; protected set; }
 
         /// <summary>
         /// Gets the height of the video file.
         /// </summary>
-        public int Height { get; }
+        public int Height { get; protected set; }
 
         /// <summary>
         /// Gets the URL of the video file.
         /// </summary>
-        public string Url { get; }
+        public string Url { get; protected set; }
 
         /// <summary>
         /// Gets the type of the video file.
         /// </summary>
-        public string Type { get; }
+        public string Type { get; protected set; }
 
         /// <summary>
         /// Gets the file size of the video file.
         /// </summary>
-        public long Size { get; }
+        public long Size { get; protected set; }
 
         #endregion
 
         #region Constructors
 
         /// <summary>
+        /// Initializes a new instance with default options.
+        /// </summary>
+        public VideoFile() {}
+
+        /// <summary>
         /// Initializes a new instance based on the specified <paramref name="width"/>, <paramref name="height"/>, <paramref name="url"/> <paramref name="type"/> and <paramref name="size"/>.
         /// </summary>
-        /// <param name="width">The width of the thumbnail.</param>
-        /// <param name="height">The height of the thumbnail.</param>
-        /// <param name="url">The URL of the thumbnail.</param>
-        /// <param name="type"></param>
-        /// <param name="size"></param>
+        /// <param name="width">The width of the video.</param>
+        /// <param name="height">The height of the video.</param>
+        /// <param name="url">The URL of the video.</param>
+        /// <param name="type">The type of the video.</param>
+        /// <param name="size">The file size of the video.</param>
         public VideoFile(int width, int height, string url, string type, long size) {
             Width = width;
             Height = height;

@@ -13,21 +13,26 @@ namespace Limbo.Umbraco.Video.Models {
         /// <summary>
         /// Gets the width of the thumbnail.
         /// </summary>
-        public int Width { get; }
+        public int Width { get; protected set; }
 
         /// <summary>
         /// Gets the height of the thumbnail.
         /// </summary>
-        public int Height { get; }
+        public int Height { get; protected set; }
 
         /// <summary>
         /// Gets the URL of the thumbnail.
         /// </summary>
-        public string Url { get; }
+        public string Url { get; protected set; }
 
         #endregion
 
         #region Constructors
+
+        /// <summary>
+        /// Initializes a new instance with default options.
+        /// </summary>
+        public VideoThumbnail() { }
 
         /// <summary>
         /// Initializes a new instance based on the specified <paramref name="width"/>, <paramref name="height"/> and <paramref name="url"/>.

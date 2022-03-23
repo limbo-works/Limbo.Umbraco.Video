@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using Skybrud.Essentials.Json.Converters.Time;
 
 namespace Limbo.Umbraco.Video.Models {
     
@@ -19,6 +20,7 @@ namespace Limbo.Umbraco.Video.Models {
         /// Gets the duration of the video.
         /// </summary>
         [JsonProperty("duration", DefaultValueHandling = DefaultValueHandling.Ignore)]
+        [JsonConverter(typeof(TimeSpanSecondsConverter))]
         TimeSpan Duration { get; }
 
         /// <summary>
