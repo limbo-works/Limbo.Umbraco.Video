@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using Skybrud.Essentials.Json.Extensions;
 
-namespace Limbo.Umbraco.Video.Models {
+namespace Limbo.Umbraco.Video.Models.Videos {
 
     /// <summary>
     /// Class representing a generic video thumbnail.

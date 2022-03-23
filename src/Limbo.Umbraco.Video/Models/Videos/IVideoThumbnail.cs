@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Limbo.Umbraco.Video.Models {
+namespace Limbo.Umbraco.Video.Models.Videos {
     
     /// <summary>
     /// Class representing a video thumbnail.

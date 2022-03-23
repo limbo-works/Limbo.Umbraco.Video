@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Skybrud.Essentials.Json.Converters;
 
-namespace Limbo.Umbraco.Video.Models {
+namespace Limbo.Umbraco.Video.Models.Videos {
 
     /// <summary>
     /// Interface describing the embed details of a video.

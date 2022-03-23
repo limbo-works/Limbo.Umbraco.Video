@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using Skybrud.Essentials.Json.Converters.Time;
 
-namespace Limbo.Umbraco.Video.Models {
+namespace Limbo.Umbraco.Video.Models.Videos {
     
     /// <summary>
     /// Interface representing the details about a picked video.
