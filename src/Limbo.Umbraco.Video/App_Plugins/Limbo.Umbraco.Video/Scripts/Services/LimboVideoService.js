@@ -1,4 +1,4 @@
-angular.module("umbraco.services").factory("limboVideoService", function () {
+angular.module("umbraco.services").factory("limboVideoService", function ($q, localizationService) {
 
     function xmlDurationToSeconds(value) {
 
@@ -31,56 +31,97 @@ angular.module("umbraco.services").factory("limboVideoService", function () {
         return seconds;
 
     }
+
+    function hest(value, singular, plural) {
+
+        const key = value === 1 ? singular : plural;
+
+        const t = {
+            value: value,
+            text: key,
+            suffix: key.substr(0, 1)
+        };
+
+        return t;
+
+    }
    
     return {
-        getDuration: function (value, format) {
+        getDuration: function (value, format, callback) {
 
-            let seconds;
-            if (typeof value === "number") {
-                seconds = value;
-            } else if (format === "xml") {
-                seconds = xmlDurationToSeconds(value);
-            } else {
-                return null;
+            // As "localizationService" is asynchronous, a "callback" parameter is required
+
+            // Second parameter may be the callback if the format is omitted
+            if (!callback && typeof format === "function") {
+                callback = format;
+                format = null;
             }
 
-            const duration = [];
+            // Initialize labels in English
+            const labels = {
+                and: "and",
+                minute: "minute",
+                minutes: "minutes",
+                second: "second",
+                seconds: "seconds",
+                hours: "hour",
+                hours: "hours"
+            };
 
-            const hours = Math.floor(seconds / 60 / 60);
-            seconds = seconds - (hours * 60 * 60);
+            const keys1 = Object.keys(labels);
+            const keys2 = Object.keys(labels).map(x => "limboVideo_" + x);
 
-            const minutes = Math.floor(seconds / 60);
-            seconds = seconds - (minutes * 60);
+            localizationService.localizeMany(keys2).then(function (values) {
 
-            if (hours === 1) {
-                duration.push({ value: 1, text: "time", suffix: "t" });
-            } else if (hours > 1) {
-                duration.push({ value: hours, text: "timer", suffix: "t" });
-            }
+                let seconds;
 
-            if (minutes === 1) {
-                duration.push({ value: 1, text: "minut", suffix: "m" });
-            } else if (minutes > 1) {
-                duration.push({ value: minutes, text: "minutter", suffix: "m" });
-            }
-
-            if (seconds === 1) {
-                duration.push({ value: 1, text: "sekund", suffix: "s" });
-            } else if (seconds > 1) {
-                duration.push({ value: Math.floor(seconds), text: "sekunder", suffix: "s" });
-            }
-
-            for (let i = 0; i < duration.length - 1; i++) {
-                if (i === duration.length - 2) {
-                    duration[i].text += " og ";
-                    duration[i].suffix += " og ";
+                // Handle various formats
+                if (typeof value === "object" && value.duration) {
+                    seconds = value.duration;
+                } else if (typeof value === "number") {
+                    seconds = value;
+                } else if (format === "xml") {
+                    seconds = xmlDurationToSeconds(value);
                 } else {
-                    duration[i].text += ",";
-                    duration[i].suffix += ",";
+                    callback(null);
+                    return;
                 }
-            }
 
-            return duration;
+                values.forEach(function (v, i) {
+                    labels[keys1[i]] = v;
+                });
+
+                const duration = [];
+
+                const hours = Math.floor(seconds / 60 / 60);
+                seconds = seconds - (hours * 60 * 60);
+
+                const minutes = Math.floor(seconds / 60);
+                seconds = seconds - (minutes * 60);
+
+                if (hours > 0) duration.push(hest(hours, labels.hour, labels.hours));
+                if (minutes > 0) duration.push(hest(minutes, labels.minute, labels.minutes));
+                if (seconds > 0) duration.push(hest(seconds, labels.second, labels.seconds));
+
+                if (duration.length > 1) {
+
+                    // Append "and" as a filler between the last and second last items
+                    duration.splice(duration.length - 1, 0, {
+                        text: ` ${labels.and} `,
+                        suffix: ` ${labels.and} `
+                    });
+
+                    // Append ", " as filler between remaining items
+                    for (let i = 0; i < duration.length - 3; i++) {
+                        duration[i].text += ",";
+                        duration[i].suffix += ",";
+                    }
+
+                }
+
+                callback(duration);
+
+            });
 
         }
     }
