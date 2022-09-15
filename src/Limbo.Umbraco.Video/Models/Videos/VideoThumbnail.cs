@@ -30,11 +30,6 @@ namespace Limbo.Umbraco.Video.Models.Videos {
         #region Constructors
 
         /// <summary>
-        /// Initializes a new instance with default options.
-        /// </summary>
-        public VideoThumbnail() { }
-
-        /// <summary>
         /// Initializes a new instance based on the specified <paramref name="width"/>, <paramref name="height"/> and <paramref name="url"/>.
         /// </summary>
         /// <param name="width">The width of the thumbnail.</param>
@@ -65,7 +60,7 @@ namespace Limbo.Umbraco.Video.Models.Videos {
         /// </summary>
         /// <param name="json">The JSON object representing the thumbnail.</param>
         /// <returns>An instance of <see cref="VideoThumbnail"/>, or <c>null</c> if <paramref name="json"/> is <c>null</c>.</returns>
-        public static VideoThumbnail Parse(JObject json) {
+        public static VideoThumbnail? Parse(JObject? json) {
             return json == null ? null : new VideoThumbnail(json);
         }
 

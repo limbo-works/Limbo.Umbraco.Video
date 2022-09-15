@@ -24,7 +24,7 @@ namespace Limbo.Umbraco.Video.Models.Credentials {
         /// Gets the description of the crendentials.
         /// </summary>
         [JsonProperty("description")]
-        public string Description { get; }
+        public string? Description { get; }
 
     }
 

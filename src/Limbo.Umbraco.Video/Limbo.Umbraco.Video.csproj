@@ -4,6 +4,7 @@
     <LangVersion>10.0</LangVersion>
     <TargetFramework>net6.0</TargetFramework>
     <ContentTargetFolders>content</ContentTargetFolders>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <PropertyGroup>

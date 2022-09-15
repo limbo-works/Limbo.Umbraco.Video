@@ -28,21 +28,16 @@ namespace Limbo.Umbraco.Video.Models.Videos {
         /// <summary>
         /// Gets the type of the video file.
         /// </summary>
-        public string Type { get; protected set; }
+        public string? Type { get; protected set; }
 
         /// <summary>
         /// Gets the file size of the video file.
         /// </summary>
-        public long Size { get; protected set; }
+        public long? Size { get; protected set; }
 
         #endregion
 
         #region Constructors
-
-        /// <summary>
-        /// Initializes a new instance with default options.
-        /// </summary>
-        public VideoFile() {}
 
         /// <summary>
         /// Initializes a new instance based on the specified <paramref name="width"/>, <paramref name="height"/>, <paramref name="url"/> <paramref name="type"/> and <paramref name="size"/>.
@@ -52,7 +47,7 @@ namespace Limbo.Umbraco.Video.Models.Videos {
         /// <param name="url">The URL of the video.</param>
         /// <param name="type">The type of the video.</param>
         /// <param name="size">The file size of the video.</param>
-        public VideoFile(int width, int height, string url, string type, long size) {
+        public VideoFile(int width, int height, string url, string? type, long? size) {
             Width = width;
             Height = height;
             Url = url;
@@ -81,7 +76,7 @@ namespace Limbo.Umbraco.Video.Models.Videos {
         /// </summary>
         /// <param name="json">The JSON object representing the video file.</param>
         /// <returns>An instance of <see cref="VideoFile"/>, or <c>null</c> if <paramref name="json"/> is <c>null</c>.</returns>
-        public static VideoFile Parse(JObject json) {
+        public static VideoFile? Parse(JObject? json) {
             return json == null ? null : new VideoFile(json);
         }
 

@@ -14,7 +14,7 @@ namespace Limbo.Umbraco.Video.Models.Videos {
         /// </summary>
         [JsonProperty("html", Order = 999, NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(StringJsonConverter))]
-        HtmlString Html { get; }
+        IHtmlContent Html { get; }
 
     }
 

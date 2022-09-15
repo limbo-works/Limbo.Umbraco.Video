@@ -29,13 +29,13 @@ namespace Limbo.Umbraco.Video.Models.Videos {
         /// Gets the type of the video file.
         /// </summary>
         [JsonProperty("type", NullValueHandling = NullValueHandling.Ignore)]
-        public string Type { get; }
+        public string? Type { get; }
 
         /// <summary>
         /// Gets the file size of the video file.
         /// </summary>
         [JsonProperty("size", DefaultValueHandling = DefaultValueHandling.Ignore)]
-        public long Size { get; }
+        public long? Size { get; }
 
     }
 
