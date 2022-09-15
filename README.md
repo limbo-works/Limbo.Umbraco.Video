@@ -33,6 +33,6 @@ The package adds for showing a video duration in a user friendly way. It may be 
 <limbo-video-duration value="video.duration"></limbo-video-duration>
 ```
 
-The duration may be specified as seconds or formatted as an ISO 8601 duration (eg. `P1DT2H30M`). Since the use case is video durations, the seconds will be split up into hours, minutes and seconds. `P1DT2H30M` will be formatted as `26 hours and 30 minutes`.
+The duration may be specified as seconds or formatted as an ISO 8601 duration (eg. `P1DT2H30M`). Since the use case is video durations, the seconds will be split up into hours, minutes and seconds, but not days, months etc. `P1DT2H30M` will be formatted as `26 hours and 30 minutes`.
 
 The values are localized, but for now only with support for English and Danish.
