@@ -13,7 +13,8 @@ namespace Limbo.Umbraco.Video.Manifests {
                 PackageName = VideoPackage.Alias.ToKebabCase(),
                 BundleOptions = BundleOptions.Independent,
                 Scripts = new[] {
-                    $"/App_Plugins/{VideoPackage.Alias}/Scripts/Services/LimboVideoService.js"
+                    $"/App_Plugins/{VideoPackage.Alias}/Scripts/Services/LimboVideoService.js",
+                    $"/App_Plugins/{VideoPackage.Alias}/Scripts/Directives/Duration.js"
                 }
             });
         }
