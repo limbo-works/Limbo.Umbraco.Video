@@ -6,6 +6,11 @@ This package doesn't really do much on it's own, but provides common functionali
 - [**Limbo.Umbraco.Vimeo**](https://github.com/limbo-works/Limbo.Umbraco.Vimeo)
 - [**Limbo.Umbraco.YouTube**](https://github.com/limbo-works/Limbo.Umbraco.YouTube)
 
+
+
+
+
+<br /><br />
 ## Installation
 
 The Umbraco 10 version of this package is only available via [NuGet](https://github.com/limbo-works/Limbo.Umbraco.Video/releases/tag/v2.0.0). To install the package, you can use either the .NET CLI:
@@ -21,6 +26,9 @@ Install-Package Limbo.Umbraco.Video
 ```
 
 
+
+
+<br /><br />
 ## Documentation
 
 ### Angular directives
