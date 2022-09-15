@@ -63,7 +63,7 @@
 
     return {
         restrict: "E",
-        template: "<div class=\"limbo-video-duration\"><span ng-repeat=\"dur in duration\">{{dur.value}} <small>{{dur.text}}</small></span><em ng-show=\"vm.duration.length == 0\">N/A</em></div>",
+        template: "<span class=\"limbo-video-duration\"><span ng-repeat=\"dur in duration\">{{dur.value}} <small>{{dur.text}}</small></span><em ng-show=\"vm.duration.length == 0\">N/A</em></span>",
         scope: {
             value: "="
         },
