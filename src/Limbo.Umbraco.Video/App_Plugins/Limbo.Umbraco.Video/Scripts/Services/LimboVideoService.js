@@ -1,4 +1,4 @@
-angular.module("umbraco.services").factory("limboVideoService", function ($q, localizationService) {
+angular.module("umbraco.services").factory("limboVideoService", function (localizationService) {
 
     function xmlDurationToSeconds(value) {
 
@@ -64,7 +64,7 @@ angular.module("umbraco.services").factory("limboVideoService", function ($q, lo
                 minutes: "minutes",
                 second: "second",
                 seconds: "seconds",
-                hours: "hour",
+                hour: "hour",
                 hours: "hours"
             };
 
