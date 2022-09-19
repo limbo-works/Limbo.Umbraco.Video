@@ -17,8 +17,8 @@ namespace Limbo.Umbraco.Video.Models.Videos {
         /// <summary>
         /// Gets the details about the picked video.
         /// </summary>
-        [JsonProperty("video", NullValueHandling = NullValueHandling.Ignore)]
-        IVideoDetails Video { get; }
+        [JsonProperty("details", NullValueHandling = NullValueHandling.Ignore)]
+        IVideoDetails Details { get; }
 
         /// <summary>
         /// Gets embed information for the video. Depending on the video provider, embed information may not be

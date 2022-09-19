@@ -17,9 +17,10 @@ namespace Limbo.Umbraco.Video.Models.Videos {
         string Title { get; }
 
         /// <summary>
-        /// Gets the duration of the video. While most video providers expose the duration of a video, some may not.
-        /// If a duration isn't provided, the value of this property will be <c>null</c>.
+        /// Gets the duration of the video.
         /// </summary>
+        /// <remarks>While most video providers expose the duration of a video, some may not. If a duration isn't
+        /// provided, the value of this property will be <c>null</c>.</remarks>
         [JsonProperty("duration", DefaultValueHandling = DefaultValueHandling.Ignore)]
         [JsonConverter(typeof(TimeSpanSecondsConverter))]
         TimeSpan? Duration { get; }
