@@ -15,6 +15,12 @@ namespace Limbo.Umbraco.Video.Models.Videos {
         string? Source { get; }
 
         /// <summary>
+        /// Gets information about the video provider.
+        /// </summary>
+        [JsonProperty("provider", NullValueHandling = NullValueHandling.Ignore)]
+        IVideoProvider? Provider { get; }
+
+        /// <summary>
         /// Gets the details about the picked video.
         /// </summary>
         [JsonProperty("details", NullValueHandling = NullValueHandling.Ignore)]
