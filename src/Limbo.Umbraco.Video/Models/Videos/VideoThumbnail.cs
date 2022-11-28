@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json.Linq;
-using Skybrud.Essentials.Json.Extensions;
+using Skybrud.Essentials.Json.Newtonsoft.Extensions;
 
 namespace Limbo.Umbraco.Video.Models.Videos {
 
@@ -48,7 +48,7 @@ namespace Limbo.Umbraco.Video.Models.Videos {
         protected VideoThumbnail(JObject json) {
             Width = json.GetInt32("width");
             Height = json.GetInt32("height");
-            Url = json.GetString("url");
+            Url = json.GetString("url")!;
         }
 
         #endregion
