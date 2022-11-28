@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Limbo.Umbraco.Video.Models.Providers;
+using Newtonsoft.Json;
 
 namespace Limbo.Umbraco.Video.Models.Videos {
 

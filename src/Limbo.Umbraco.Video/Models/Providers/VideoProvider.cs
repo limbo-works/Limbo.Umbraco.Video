@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Limbo.Umbraco.Video.Models.Videos {
+namespace Limbo.Umbraco.Video.Models.Providers {
 
     /// <summary>
     /// Class with limited information about a video provider.
