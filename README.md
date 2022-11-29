@@ -5,7 +5,7 @@ This package doesn't really do much on it's own, but provides common functionali
 - [**Limbo.Umbraco.DreamBroker**](https://github.com/limbo-works/Limbo.Umbraco.DreamBroker) (Umbraco 9)
 - [**Limbo.Umbraco.TwentyThree**](https://github.com/limbo-works/Limbo.Umbraco.TwentyThree) (Umbraco 10)
 - [**Limbo.Umbraco.Vimeo**](https://github.com/limbo-works/Limbo.Umbraco.Vimeo) (Umbraco 9)
-- [**Limbo.Umbraco.YouTube**](https://github.com/limbo-works/Limbo.Umbraco.YouTube) (Umbraco 9)
+- [**Limbo.Umbraco.YouTube**](https://github.com/limbo-works/Limbo.Umbraco.YouTube) (Umbraco 9, 10 and 11)
 
 
 
