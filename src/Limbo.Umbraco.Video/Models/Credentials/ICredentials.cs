@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 
 namespace Limbo.Umbraco.Video.Models.Credentials {
-    
+
     /// <summary>
     /// Interface describing a set of credentials.
     /// </summary>
