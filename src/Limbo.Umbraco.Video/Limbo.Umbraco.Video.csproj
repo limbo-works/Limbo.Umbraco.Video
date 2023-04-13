@@ -8,11 +8,11 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <VersionPrefix>2.0.3</VersionPrefix>
+    <VersionPrefix>2.0.4</VersionPrefix>
     <VersionSuffix Condition="'$(Configuration)'=='Debug'">build$([System.DateTime]::UtcNow.ToString(`yyyyMMddHHmm`))</VersionSuffix>
     <Company>Limbo</Company>
     <Authors>Anders Bjerner</Authors>
-    <Copyright>Copyright © 2022</Copyright>
+    <Copyright>Copyright © 2023</Copyright>
     <Title>Limbo Video</Title>
     <Description>Package serving as a base for Limbo's video picker packages.</Description>
   </PropertyGroup>
@@ -20,9 +20,9 @@
   <!-- Information for the NuGet package -->
   <PropertyGroup>
     <PackageId>Limbo.Umbraco.Video</PackageId>
-    <PackageTags>Skybrud, Limbo, Umbraco, Video</PackageTags>
+    <PackageTags>Skybrud, Limbo, Umbraco, Video, Umbraco-Marketplace</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/limbo-works/Limbo.Umbraco.Video</PackageProjectUrl>
+    <PackageProjectUrl>https://packages.limbo.works/limbo.umbraco.video/v2</PackageProjectUrl>
     <PackageIcon>Limbo.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/limbo-works/Limbo.Umbraco.Video</RepositoryUrl>
