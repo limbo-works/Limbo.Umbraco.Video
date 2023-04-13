@@ -2,7 +2,7 @@
 using Skybrud.Essentials.Json.Newtonsoft.Extensions;
 
 namespace Limbo.Umbraco.Video.Models.Videos {
-    
+
     /// <summary>
     /// Class representing a generic video file.
     /// </summary>

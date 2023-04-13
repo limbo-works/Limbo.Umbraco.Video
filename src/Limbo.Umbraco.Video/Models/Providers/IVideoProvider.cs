@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 
 namespace Limbo.Umbraco.Video.Models.Providers {
-    
+
     /// <summary>
     /// Interface with limited information about a video provider.
     /// </summary>

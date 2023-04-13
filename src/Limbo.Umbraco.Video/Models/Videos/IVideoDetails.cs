@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 using Skybrud.Essentials.Json.Converters.Time;
 
 namespace Limbo.Umbraco.Video.Models.Videos {
-    
+
     /// <summary>
     /// Interface representing the details about a picked video.
     /// </summary>
@@ -33,7 +33,7 @@ namespace Limbo.Umbraco.Video.Models.Videos {
         public IEnumerable<IVideoThumbnail>? Thumbnails { get; }
 
         /// <summary>
-        /// Gets a list of video files of the video. 
+        /// Gets a list of video files of the video.
         /// </summary>
         /// <remarks>The value of this property will be <c>null</c> if the video provider doesn't expose any video files.</remarks>
         [JsonProperty("files", NullValueHandling = NullValueHandling.Ignore)]
