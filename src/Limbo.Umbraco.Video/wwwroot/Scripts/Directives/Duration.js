@@ -130,8 +130,8 @@
 
                         // Append ", " as filler between remaining items
                         for (let i = 0; i < duration.length - 3; i++) {
-                            duration[i].text += ",";
-                            duration[i].suffix += ",";
+                            duration[i].text += ", ";
+                            duration[i].suffix += ", ";
                         }
 
                     }
