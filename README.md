@@ -1,5 +1,7 @@
 # Limbo Video
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md) [![NuGet](https://img.shields.io/nuget/v/Limbo.Umbraco.Video.svg)](https://www.nuget.org/packages/Limbo.Umbraco.Video) [![NuGet](https://img.shields.io/nuget/dt/Limbo.Umbraco.Video.svg)](https://www.nuget.org/packages/Limbo.Umbraco.Video)
+
 This package doesn't really do much on it's own, but provides common functionality for:
 
 - [**Limbo.Umbraco.DreamBroker**](https://github.com/limbo-works/Limbo.Umbraco.DreamBroker) (Umbraco 9)
@@ -7,6 +9,26 @@ This package doesn't really do much on it's own, but provides common functionali
 - [**Limbo.Umbraco.Vimeo**](https://github.com/limbo-works/Limbo.Umbraco.Vimeo) (Umbraco 9)
 - [**Limbo.Umbraco.YouTube**](https://github.com/limbo-works/Limbo.Umbraco.YouTube) (Umbraco 9, 10 and 11)
 
+<table>
+  <tr>
+    <td><strong>License:</strong></td>
+    <td><a href="./LICENSE.md"><strong>MIT License</strong></a></td>
+  </tr>
+  <tr>
+    <td><strong>Umbraco:</strong></td>
+    <td>
+      Umbraco 10, 11 and 12
+      <sub><sup>(and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main">Umbraco 9</a>)</sup></sub>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Target Framework:</strong></td>
+    <td>
+      .NET 6
+      <sub><sup>(and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main">.NET 5</a>)</sup></sub>
+    </td>
+  </tr>
+</table>
 
 
 
@@ -14,16 +36,16 @@ This package doesn't really do much on it's own, but provides common functionali
 <br /><br />
 ## Installation
 
-The Umbraco 10 version of this package is only available via [NuGet](https://github.com/limbo-works/Limbo.Umbraco.Video/releases/tag/v2.0.0). To install the package, you can use either the .NET CLI:
+The Umbraco 10+ version of this package is only available via [NuGet](https://github.com/limbo-works/Limbo.Umbraco.Video/releases/tag/v2.0.6). To install the package, you can use either the .NET CLI:
 
 ```
-dotnet add package Limbo.Umbraco.Video
+dotnet add package Limbo.Umbraco.Video --version 2.0.6
 ```
 
-or the older NuGet Package Manager:
+or the NuGet Package Manager:
 
 ```
-Install-Package Limbo.Umbraco.Video
+Install-Package Limbo.Umbraco.Video -Version 2.0.6
 ```
 
 
