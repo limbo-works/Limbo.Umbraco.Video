@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Html;
 using Newtonsoft.Json;
-using Skybrud.Essentials.Json.Converters;
+using Skybrud.Essentials.Json.Newtonsoft.Converters;
 
 namespace Limbo.Umbraco.Video.Models.Videos {
 
