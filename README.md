@@ -1,6 +1,6 @@
 # Limbo Video
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md) [![NuGet](https://img.shields.io/nuget/v/Limbo.Umbraco.Video.svg)](https://www.nuget.org/packages/Limbo.Umbraco.Video) [![NuGet](https://img.shields.io/nuget/dt/Limbo.Umbraco.Video.svg)](https://www.nuget.org/packages/Limbo.Umbraco.Video)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md) [![NuGet](https://img.shields.io/nuget/v/Limbo.Umbraco.Video.svg)](https://www.nuget.org/packages/Limbo.Umbraco.Video) [![NuGet](https://img.shields.io/nuget/dt/Limbo.Umbraco.Video.svg)](https://www.nuget.org/packages/Limbo.Umbraco.Video) [![Umbraco Marketplace](https://img.shields.io/badge/umbraco-marketplace-%233544B1)](https://marketplace.umbraco.com/package/limbo.umbraco.video)
 
 This package doesn't really do much on it's own, but provides common functionality for:
 
