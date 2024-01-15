@@ -5,10 +5,10 @@
 This package doesn't really do much on it's own, but provides common functionality for:
 
 - [**Limbo.Umbraco.DreamBroker**](https://github.com/limbo-works/Limbo.Umbraco.DreamBroker)
+- [**Limbo.Umbraco.Skyfish**](https://github.com/limbo-works/Limbo.Umbraco.Skyfish)
 - [**Limbo.Umbraco.TwentyThree**](https://github.com/limbo-works/Limbo.Umbraco.TwentyThree)
 - [**Limbo.Umbraco.Vimeo**](https://github.com/limbo-works/Limbo.Umbraco.Vimeo)
 - [**Limbo.Umbraco.YouTube**](https://github.com/limbo-works/Limbo.Umbraco.YouTube)
-- [**Limbo.Umbraco.Skyfish**](https://github.com/limbo-works/Limbo.Umbraco.Skyfish)
 
 <table>
   <tr>
@@ -37,16 +37,16 @@ This package doesn't really do much on it's own, but provides common functionali
 <br /><br />
 ## Installation
 
-The Umbraco 10+ version of this package is only available via [NuGet](https://github.com/limbo-works/Limbo.Umbraco.Video/releases/tag/v2.0.6). To install the package, you can use either the .NET CLI:
+The Umbraco 10+ version of this package is only available via [NuGet](https://github.com/limbo-works/Limbo.Umbraco.Video/releases/tag/v2.0.7). To install the package, you can use either the .NET CLI:
 
 ```
-dotnet add package Limbo.Umbraco.Video --version 2.0.6
+dotnet add package Limbo.Umbraco.Video --version 2.0.7
 ```
 
 or the NuGet Package Manager:
 
 ```
-Install-Package Limbo.Umbraco.Video -Version 2.0.6
+Install-Package Limbo.Umbraco.Video -Version 2.0.7
 ```
 
 
