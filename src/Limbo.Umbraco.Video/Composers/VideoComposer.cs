@@ -2,16 +2,14 @@
 using Umbraco.Cms.Core.Composing;
 using Umbraco.Cms.Core.DependencyInjection;
 
-namespace Limbo.Umbraco.Video.Composers {
+namespace Limbo.Umbraco.Video.Composers;
+
+/// <inheritdoc />
+public class VideoComposer : IComposer {
 
     /// <inheritdoc />
-    public class VideoComposer : IComposer {
-
-        /// <inheritdoc />
-        public void Compose(IUmbracoBuilder builder) {
-            builder.ManifestFilters().Append<VideoManifestFilter>();
-        }
-
+    public void Compose(IUmbracoBuilder builder) {
+        builder.ManifestFilters().Append<VideoManifestFilter>();
     }
 
 }
