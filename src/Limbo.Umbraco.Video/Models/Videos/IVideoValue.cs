@@ -10,7 +10,7 @@ namespace Limbo.Umbraco.Video.Models.Videos {
 
         /// <summary>
         /// Gets the source (URL or embed code) as entered by the user. If the user picked the video instead, this
-        /// property may be <c>null</c>.
+        /// property may be <see langword="null"/>.
         /// </summary>
         [JsonProperty("source", NullValueHandling = NullValueHandling.Ignore)]
         string? Source { get; }
@@ -29,7 +29,7 @@ namespace Limbo.Umbraco.Video.Models.Videos {
 
         /// <summary>
         /// Gets embed information for the video. Depending on the video provider, embed information may not be
-        /// available, in which case this property will be <c>null</c>.
+        /// available, in which case this property will be <see langword="null"/>.
         /// </summary>
         [JsonProperty("embed", NullValueHandling = NullValueHandling.Ignore)]
         IVideoEmbed? Embed { get; }

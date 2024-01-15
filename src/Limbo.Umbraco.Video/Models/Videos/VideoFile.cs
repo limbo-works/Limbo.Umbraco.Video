@@ -72,10 +72,10 @@ namespace Limbo.Umbraco.Video.Models.Videos {
         #region Static methods
 
         /// <summary>
-        /// Returns a new <see cref="VideoFile"/> parsed from the specified <paramref name="json"/> object, or <c>null</c> if <paramref name="json"/> is <c>null</c>.
+        /// Returns a new <see cref="VideoFile"/> parsed from the specified <paramref name="json"/> object, or <see langword="null"/> if <paramref name="json"/> is <see langword="null"/>.
         /// </summary>
         /// <param name="json">The JSON object representing the video file.</param>
-        /// <returns>An instance of <see cref="VideoFile"/>, or <c>null</c> if <paramref name="json"/> is <c>null</c>.</returns>
+        /// <returns>An instance of <see cref="VideoFile"/>, or <see langword="null"/> if <paramref name="json"/> is <see langword="null"/>.</returns>
         public static VideoFile? Parse(JObject? json) {
             return json == null ? null : new VideoFile(json);
         }
