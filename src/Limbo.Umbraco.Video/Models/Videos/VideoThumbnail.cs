@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using System.Diagnostics.CodeAnalysis;
+using Newtonsoft.Json.Linq;
 using Skybrud.Essentials.Json.Newtonsoft.Extensions;
 
 namespace Limbo.Umbraco.Video.Models.Videos;
@@ -60,6 +61,7 @@ public class VideoThumbnail : IVideoThumbnail {
     /// </summary>
     /// <param name="json">The JSON object representing the thumbnail.</param>
     /// <returns>An instance of <see cref="VideoThumbnail"/>, or <see langword="null"/> if <paramref name="json"/> is <see langword="null"/>.</returns>
+    [return: NotNullIfNotNull(nameof(json))]
     public static VideoThumbnail? Parse(JObject? json) {
         return json == null ? null : new VideoThumbnail(json);
     }
