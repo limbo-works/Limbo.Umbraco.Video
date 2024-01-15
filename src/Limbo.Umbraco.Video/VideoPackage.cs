@@ -27,7 +27,9 @@ namespace Limbo.Umbraco.Video {
         /// <summary>
         /// Gets the informational version of the package.
         /// </summary>
-        public static readonly string InformationalVersion = ReflectionUtils.GetInformationalVersion<VideoPackage>();
+        public static readonly string InformationalVersion = ReflectionUtils
+            .GetInformationalVersion<VideoPackage>()
+            .Split('+')[0];
 
         /// <summary>
         /// Gets the semantic version of the package.
