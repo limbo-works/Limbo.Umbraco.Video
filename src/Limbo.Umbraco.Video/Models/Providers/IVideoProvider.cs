@@ -14,7 +14,7 @@ namespace Limbo.Umbraco.Video.Models.Providers {
         string Alias { get; }
 
         /// <summary>
-        /// Gets the alias of the provider - eg. <c>youtube</c>.
+        /// Gets the name of the provider - eg. <c>YouTube</c>.
         /// </summary>
         [JsonIgnore]
         string Name { get; }
