@@ -61,7 +61,7 @@ For the Umbraco 10-12 version of this package, see the [**`v2/main`**](https://g
 
 ### Umbraco 9
 
-For the Umbraco 9 version of this package, see the [**`v2/main`**](https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main) branch.
+For the Umbraco 9 version of this package, see the [**`v1/main`**](https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main) branch.
 
 
 
@@ -74,7 +74,7 @@ For the Umbraco 9 version of this package, see the [**`v2/main`**](https://githu
 
 #### Duration
 
-The package adds for showing a video duration in a user friendly way. It may be used like:
+The package adds an Angular directive for showing a video duration in a user friendly way. It may be used like:
 
 ```html
 <limbo-video-duration value="video.duration"></limbo-video-duration>
