@@ -18,15 +18,15 @@ This package doesn't really do much on it's own, but provides common functionali
   <tr>
     <td><strong>Umbraco:</strong></td>
     <td>
-      Umbraco 10, 11 and 12
-      <sub><sup>(and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main">Umbraco 9</a>)</sup></sub>
+      Umbraco 13
+      <sub><sup>(and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v2/main">Umbraco 10-13</a> and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main">Umbraco 9</a>)</sup></sub>
     </td>
   </tr>
   <tr>
     <td><strong>Target Framework:</strong></td>
     <td>
-      .NET 6
-      <sub><sup>(and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main">.NET 5</a>)</sup></sub>
+      .NET 8
+      <sub><sup>(and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main">.NET 6</a> and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main">.NET 5</a>)</sup></sub>
     </td>
   </tr>
 </table>
@@ -37,17 +37,28 @@ This package doesn't really do much on it's own, but provides common functionali
 <br /><br />
 ## Installation
 
-The Umbraco 10+ version of this package is only available via [NuGet](https://github.com/limbo-works/Limbo.Umbraco.Video/releases/tag/v2.0.6). To install the package, you can use either the .NET CLI:
+### Umbraco 13
+
+The package is only available via [**NuGet**](https://www.nuget.org/packages/Limbo.Umbraco.Video). To install the package, you can use either the .NET CLI:
 
 ```
-dotnet add package Limbo.Umbraco.Video --version 2.0.6
+dotnet add package Limbo.Umbraco.Video --version 13.0.0
 ```
 
 or the NuGet Package Manager:
 
 ```
-Install-Package Limbo.Umbraco.Video -Version 2.0.6
+Install-Package Limbo.Umbraco.Video -Version 13.0.0
 ```
+
+### Umbraco 10, 11 and 12
+
+For the Umbraco 10-12 version of this package, see the [**`v2/main`**](https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v2/main) branch.
+
+### Umbraco 9
+
+For the Umbraco 9 version of this package, see the [**`v2/main`**](https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main) branch.
+
 
 
 
