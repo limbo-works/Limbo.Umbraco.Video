@@ -19,7 +19,7 @@ This package doesn't really do much on it's own, but provides common functionali
     <td><strong>Umbraco:</strong></td>
     <td>
       Umbraco 13
-      <sub><sup>(and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v2/main">Umbraco 10-13</a> and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main">Umbraco 9</a>)</sup></sub>
+      <sub><sup>(and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v2/main">Umbraco 10-12</a> and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main">Umbraco 9</a>)</sup></sub>
     </td>
   </tr>
   <tr>
