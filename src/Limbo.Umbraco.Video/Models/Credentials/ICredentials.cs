@@ -9,19 +9,19 @@ namespace Limbo.Umbraco.Video.Models.Credentials;
 public interface ICredentials {
 
     /// <summary>
-    /// Gets the unique key (GUID) of the crendentials.
+    /// Gets the unique key (GUID) of the credentials.
     /// </summary>
     [JsonProperty("key")]
     public Guid Key { get; }
 
     /// <summary>
-    /// Gets the friendly name of the crendentials.
+    /// Gets the friendly name of the credentials.
     /// </summary>
     [JsonProperty("name")]
     public string Name { get; }
 
     /// <summary>
-    /// Gets the description of the crendentials.
+    /// Gets the description of the credentials.
     /// </summary>
     [JsonProperty("description")]
     public string? Description { get; }

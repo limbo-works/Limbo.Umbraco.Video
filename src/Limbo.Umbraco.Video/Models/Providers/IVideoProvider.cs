@@ -8,13 +8,13 @@ namespace Limbo.Umbraco.Video.Models.Providers;
 public interface IVideoProvider {
 
     /// <summary>
-    /// Gets the alias of the provider - eg. <c>youtube</c>.
+    /// Gets the alias of the provider - e.g. <c>youtube</c>.
     /// </summary>
     [JsonProperty("alias")]
     string Alias { get; }
 
     /// <summary>
-    /// Gets the name of the provider - eg. <c>YouTube</c>.
+    /// Gets the name of the provider - e.g. <c>YouTube</c>.
     /// </summary>
     [JsonIgnore]
     string Name { get; }

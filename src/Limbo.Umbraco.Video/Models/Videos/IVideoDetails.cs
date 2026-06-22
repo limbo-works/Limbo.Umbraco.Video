@@ -30,13 +30,13 @@ public interface IVideoDetails {
     /// </summary>
     /// <remarks>The value of this property will be <see langword="null"/> if the video provider doesn't expose any thumbnails.</remarks>
     [JsonProperty("thumbnails", NullValueHandling = NullValueHandling.Ignore)]
-    public IEnumerable<IVideoThumbnail>? Thumbnails { get; }
+    public IReadOnlyList<IVideoThumbnail>? Thumbnails { get; }
 
     /// <summary>
     /// Gets a list of video files of the video.
     /// </summary>
     /// <remarks>The value of this property will be <see langword="null"/> if the video provider doesn't expose any video files.</remarks>
     [JsonProperty("files", NullValueHandling = NullValueHandling.Ignore)]
-    public IEnumerable<IVideoFile>? Files { get; }
+    public IReadOnlyList<IVideoFile>? Files { get; }
 
 }

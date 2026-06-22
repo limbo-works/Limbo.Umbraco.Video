@@ -1,6 +1,6 @@
 # Limbo Video
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/limbo-works/Limbo.Umbraco.Video/blob/v17/main/LICENSE.md)
 [![NuGet](https://img.shields.io/nuget/v/Limbo.Umbraco.Video.svg)](https://www.nuget.org/packages/Limbo.Umbraco.Video)
 [![NuGet](https://img.shields.io/nuget/dt/Limbo.Umbraco.Video.svg)](https://www.nuget.org/packages/Limbo.Umbraco.Video)
 [![Umbraco Marketplace](https://img.shields.io/badge/umbraco-marketplace-%233544B1)](https://marketplace.umbraco.com/package/limbo.umbraco.video)
@@ -22,15 +22,13 @@ This package doesn't really do much on it's own, but provides common functionali
   <tr>
     <td><strong>Umbraco:</strong></td>
     <td>
-      Umbraco 13
-      <sub><sup>(and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v2/main">Umbraco 10-12</a> and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main">Umbraco 9</a>)</sup></sub>
+      Umbraco 17
     </td>
   </tr>
   <tr>
     <td><strong>Target Framework:</strong></td>
     <td>
-      .NET 8
-      <sub><sup>(and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main">.NET 6</a> and <a href="https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main">.NET 5</a>)</sup></sub>
+      .NET 10
     </td>
   </tr>
 </table>
@@ -41,40 +39,35 @@ This package doesn't really do much on it's own, but provides common functionali
 <br /><br />
 ## Installation
 
-### Umbraco 13
+### Umbraco 17
 
 The package is only available via [**NuGet**](https://www.nuget.org/packages/Limbo.Umbraco.Video). To install the package, you can use either the .NET CLI:
 
 ```
-dotnet add package Limbo.Umbraco.Video --version 13.0.0
+dotnet add package Limbo.Umbraco.Video --version 17.0.0-alpha001
 ```
 
 or the NuGet Package Manager:
 
 ```
-Install-Package Limbo.Umbraco.Video -Version 13.0.0
+Install-Package Limbo.Umbraco.Video -Version 17.0.0-alpha001
 ```
 
-### Umbraco 10, 11 and 12
+### Other versions of Umbraco
 
-For the Umbraco 10-12 version of this package, see the [**`v2/main`**](https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v2/main) branch.
-
-### Umbraco 9
-
-For the Umbraco 9 version of this package, see the [**`v1/main`**](https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main) branch.
-
-
-
+- [**`v13/main`**](https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v13/main) Umbraco 13
+- ~~[**`v2/main`**](https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v2/main) Umbraco 10, 11 and 12~~ <sub title="Umbraco 10, 11 and 12 have reached end-of-life"><sup>(EOL)</sup></sub>
+- ~~[**`v1/main`**](https://github.com/limbo-works/Limbo.Umbraco.Video/tree/v1/main) Umbraco 9~~ <sub title="Umbraco 9 have reached end-of-life"><sup>(EOL)</sup></sub>
 
 
 <br /><br />
 ## Documentation
 
-### Angular directives
+### Elements
 
 #### Duration
 
-The package adds an Angular directive for showing a video duration in a user friendly way. It may be used like:
+The package adds a Lit element for showing a video duration in a user friendly way. It may be used like:
 
 ```html
 <limbo-video-duration value="video.duration"></limbo-video-duration>
