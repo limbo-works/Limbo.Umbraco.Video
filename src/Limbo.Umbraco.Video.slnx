@@ -6,6 +6,7 @@
     <File Path="../README.md" />
     <File Path="../release.bat" />
     <File Path=".editorconfig" />
+    <File Path="Limbo.Umbraco.Video.sln.DotSettings" />
   </Folder>
   <Project Path="Limbo.Umbraco.Video/Limbo.Umbraco.Video.csproj" />
 </Solution>
