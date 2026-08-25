@@ -44,13 +44,13 @@ This package doesn't really do much on it's own, but provides common functionali
 The package is only available via [**NuGet**](https://www.nuget.org/packages/Limbo.Umbraco.Video). To install the package, you can use either the .NET CLI:
 
 ```
-dotnet add package Limbo.Umbraco.Video --version 17.0.0-alpha001
+dotnet add package Limbo.Umbraco.Video --version 17.0.0-alpha002
 ```
 
 or the NuGet Package Manager:
 
 ```
-Install-Package Limbo.Umbraco.Video -Version 17.0.0-alpha001
+Install-Package Limbo.Umbraco.Video -Version 17.0.0-alpha002
 ```
 
 ### Other versions of Umbraco
