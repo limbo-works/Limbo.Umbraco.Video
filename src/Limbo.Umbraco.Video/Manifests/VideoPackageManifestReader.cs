@@ -26,7 +26,7 @@ public class VideoPackageManifestReader : IPackageManifestReader {
                         type = "localization",
                         alias = $"{alias}.Localization.En",
                         name = "English",
-                        js = $"/App_Plugins/{alias}/Localization/en-US.js?v=" + cacheBuster,
+                        js = $"/App_Plugins/{alias}/Localization/en-US.js?v={cacheBuster}",
                         meta = new {
                             culture = "en"
                         }
@@ -35,7 +35,7 @@ public class VideoPackageManifestReader : IPackageManifestReader {
                         type = "localization",
                         alias = $"{alias}.Localization.Da",
                         name = "Danish",
-                        js = $"/App_Plugins/{alias}/Localization/da-DK.js?v=" + cacheBuster,
+                        js = $"/App_Plugins/{alias}/Localization/da-DK.js?v={cacheBuster}",
                         meta = new {
                             culture = "da"
                         }
