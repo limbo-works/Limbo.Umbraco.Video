@@ -49,7 +49,7 @@ public class VideoThumbnail : IVideoThumbnail {
     protected VideoThumbnail(JObject json) {
         Width = json.GetInt32("width");
         Height = json.GetInt32("height");
-        Url = json.GetString("url")!;
+        Url = json.GetRequiredString("url");
     }
 
     #endregion
@@ -61,9 +61,8 @@ public class VideoThumbnail : IVideoThumbnail {
     /// </summary>
     /// <param name="json">The JSON object representing the thumbnail.</param>
     /// <returns>An instance of <see cref="VideoThumbnail"/>, or <see langword="null"/> if <paramref name="json"/> is <see langword="null"/>.</returns>
-    [return: NotNullIfNotNull(nameof(json))]
-    public static VideoThumbnail? Parse(JObject? json) {
-        return json == null ? null : new VideoThumbnail(json);
+    public static VideoThumbnail Parse(JObject json) {
+        return new VideoThumbnail(json);
     }
 
     #endregion

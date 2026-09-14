@@ -10,32 +10,35 @@ namespace Limbo.Umbraco.Video.Manifests;
 
 public class VideoPackageManifestReader : IPackageManifestReader {
 
+    public const string Alias = VideoPackage.Alias;
+
+    public const string Name = VideoPackage.Name;
+
     public async Task<IEnumerable<PackageManifest>> ReadPackageManifestsAsync() {
 
-        const string alias = VideoPackage.Alias;
         string cacheBuster = VideoPackage.InformationalVersion.ToMd5Hash();
 
         List<PackageManifest> temp = [
             new() {
-                Id = VideoPackage.Alias,
-                Name = VideoPackage.Name,
+                Id = Alias,
+                Name = Name,
                 AllowTelemetry = true,
                 Version = VideoPackage.InformationalVersion,
                 Extensions = [
                     new {
                         type = "localization",
-                        alias = $"{alias}.Localization.En",
-                        name = "English",
-                        js = $"/App_Plugins/{alias}/Localization/en-US.js?v={cacheBuster}",
+                        alias = $"{Alias}.Localization.En",
+                        name = $"{Name}: English",
+                        js = $"/App_Plugins/{Alias}/Localization/en-US.js?v={cacheBuster}",
                         meta = new {
                             culture = "en"
                         }
                     },
                     new {
                         type = "localization",
-                        alias = $"{alias}.Localization.Da",
-                        name = "Danish",
-                        js = $"/App_Plugins/{alias}/Localization/da-DK.js?v={cacheBuster}",
+                        alias = $"{Alias}.Localization.Da",
+                        name = $"{Name}: Danish",
+                        js = $"/App_Plugins/{Alias}/Localization/da-DK.js?v={cacheBuster}",
                         meta = new {
                             culture = "da"
                         }
@@ -43,7 +46,7 @@ public class VideoPackageManifestReader : IPackageManifestReader {
                 ],
                 Importmap = new PackageManifestImportmap {
                     Imports = new Dictionary<string, string> {
-                        {"@limbo/video/elements/duration", $"/App_Plugins/{alias}/Elements/Duration.js?v={cacheBuster}"}
+                        {"@limbo/video/elements/duration", $"/App_Plugins/{Alias}/Elements/Duration.js?v={cacheBuster}"}
                     }
                 }
             }

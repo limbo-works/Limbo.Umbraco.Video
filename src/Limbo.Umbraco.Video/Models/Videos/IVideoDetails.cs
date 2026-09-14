@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
-using Skybrud.Essentials.Json.Converters.Time;
+using Skybrud.Essentials.Json.Newtonsoft.Converters.Time;
 
 namespace Limbo.Umbraco.Video.Models.Videos;
 

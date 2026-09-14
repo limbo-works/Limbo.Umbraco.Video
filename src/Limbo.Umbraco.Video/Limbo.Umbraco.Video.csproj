@@ -13,6 +13,7 @@
     <Authors>Anders Bjerner</Authors>
     <Copyright>Copyright © $([System.DateTime]::UtcNow.ToString(`yyyy`))</Copyright>
     <Title>Limbo Video</Title>
+    <Product>Limbo Video</Product>
     <Description>Package serving as a base for Limbo's video picker packages.</Description>
   </PropertyGroup>
 
@@ -21,7 +22,7 @@
     <PackageId>Limbo.Umbraco.Video</PackageId>
     <PackageTags>Skybrud, Limbo, Umbraco, Video, Umbraco-Marketplace</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://packages.limbo.works/limbo.umbraco.video/v13/</PackageProjectUrl>
+    <PackageProjectUrl>https://packages.limbo.works/limbo.umbraco.video/</PackageProjectUrl>
     <PackageIcon>Limbo.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/limbo-works/Limbo.Umbraco.Video</RepositoryUrl>
@@ -43,7 +44,7 @@
 
   <!-- Include NuGet dependencies -->
   <ItemGroup>
-    <PackageReference Include="Skybrud.Essentials" Version="1.1.68" />
+    <PackageReference Include="Skybrud.Essentials" Version="1.1.69" />
     <PackageReference Include="Umbraco.Cms.Core" Version="[17.0.0,17.999)" />
     <PackageReference Include="Umbraco.Cms.Web.Website" Version="[17.0.0,17.999)" />
   </ItemGroup>

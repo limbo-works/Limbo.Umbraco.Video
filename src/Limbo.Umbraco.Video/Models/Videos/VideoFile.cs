@@ -1,5 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 using Skybrud.Essentials.Json.Newtonsoft.Extensions;
 
 namespace Limbo.Umbraco.Video.Models.Videos;
@@ -63,7 +62,7 @@ public class VideoFile : IVideoFile {
     protected VideoFile(JObject json) {
         Width = json.GetInt32("width");
         Height = json.GetInt32("height");
-        Url = json.GetString("url")!;
+        Url = json.GetRequiredString("url");
         Type = json.GetString("type");
         Size = json.GetInt64("size");
     }
@@ -77,9 +76,8 @@ public class VideoFile : IVideoFile {
     /// </summary>
     /// <param name="json">The JSON object representing the video file.</param>
     /// <returns>An instance of <see cref="VideoFile"/>, or <see langword="null"/> if <paramref name="json"/> is <see langword="null"/>.</returns>
-    [return: NotNullIfNotNull(nameof(json))]
-    public static VideoFile? Parse(JObject? json) {
-        return json == null ? null : new VideoFile(json);
+    public static VideoFile Parse(JObject json) {
+        return new VideoFile(json);
     }
 
     #endregion
